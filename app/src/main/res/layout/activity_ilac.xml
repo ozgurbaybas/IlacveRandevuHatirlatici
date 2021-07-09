@@ -1,0 +1,207 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#E5E0CA"
+    tools:context="com.example.zgr.ilachatirlatici.Ilac"
+    android:id="@+id/relativeLayout">
+
+    //ET:edittext,TV:textview,CB:checkedbox
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ilacAdiET"
+        android:hint="İlaç adını giriniz.."
+        android:layout_marginTop="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kullanimNedeniET"
+        android:hint="İlaç kullanım nedenini giriniz.."
+        android:layout_below="@+id/ilacAdiET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/ilacAdiET"
+        android:layout_alignEnd="@+id/ilacAdiET" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Günlük Kullanım Miktarını giriniz.."
+        android:id="@+id/gunlukKullanimMiktariET"
+        android:layout_below="@+id/baslamaTarihiET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/baslamaTarihiET"
+        android:layout_alignEnd="@+id/baslamaTarihiET" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Toplam ilaç sayısını giriniz.."
+        android:id="@+id/toplamilaçET"
+        android:layout_below="@+id/gunlukKullanimMiktariET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/gunlukKullanimMiktariET"
+        android:layout_alignEnd="@+id/gunlukKullanimMiktariET" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İlaç Alma Saatleri"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:textColor="#3B6C1B"
+        android:id="@+id/ilacAlmaSaatleriTV"
+        android:layout_above="@+id/sabahCB"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sabah"
+        android:id="@+id/sabahCB"
+        android:checked="false"
+        android:layout_above="@+id/sabahSaatET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/sabahSaatET"
+        android:hint="Sabah ilaç saatinizi giriniz.."
+        android:visibility="invisible"
+        android:layout_above="@+id/ogleCB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Öğle"
+        android:id="@+id/ogleCB"
+        android:checked="false"
+        android:layout_above="@+id/ogleSaatET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/ogleSaatET"
+        android:hint="Öğle ilaç saatinizi giriniz.."
+        android:visibility="invisible"
+        android:layout_above="@+id/aksamCB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akşam"
+        android:id="@+id/aksamCB"
+        android:checked="false"
+        android:layout_above="@+id/aksamSaatET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/aksamSaatET"
+        android:hint="Akşam ilaç saatinizi giriniz.."
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KAYDET"
+        android:textColor="#3B6C1B"
+        android:textStyle="bold"
+        android:background="#E5E0CA"
+        android:id="@+id/kaydetButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/geriButton"
+        android:background="@drawable/ok1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="İlaca başlama tarihini giriniz.."
+        android:ems="10"
+        android:id="@+id/baslamaTarihiET"
+        android:layout_below="@+id/kullanimNedeniET"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yarım"
+        android:id="@+id/yarimRB"
+        android:checked="false"
+        android:layout_alignTop="@+id/butunRB"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bütün"
+        android:id="@+id/butunRB"
+        android:checked="false"
+        android:layout_above="@+id/ilacAlmaSaatleriTV"
+        android:layout_alignLeft="@+id/ilacAlmaSaatleriTV"
+        android:layout_alignStart="@+id/ilacAlmaSaatleriTV" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İki"
+        android:id="@+id/ikiRB"
+        android:checked="false"
+        android:layout_alignTop="@+id/butunRB"
+        android:layout_toRightOf="@+id/sabahSaatET"
+        android:layout_toEndOf="@+id/sabahSaatET" />
+
+
+</RelativeLayout>

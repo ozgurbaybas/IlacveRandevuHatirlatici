@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#E5E0CA"
+    android:id="@+id/relativeLayout"
+    tools:context="com.example.zgr.ilachatirlatici.UyeFormu">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adiEditText"
+        android:inputType="textPersonName"
+        android:hint="Adınız"
+        android:layout_above="@+id/soyadiEditText"
+        android:layout_alignLeft="@+id/soyadiEditText"
+        android:layout_alignStart="@+id/soyadiEditText"
+        android:layout_alignRight="@+id/soyadiEditText"
+        android:layout_alignEnd="@+id/soyadiEditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/soyadiEditText"
+        android:hint="Soyadınız"
+        android:layout_above="@+id/kullaniciAdiEditText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/kullaniciAdiEditText"
+        android:hint="Kullanıcı Adınız"
+        android:layout_above="@+id/EmailEditText"
+        android:layout_alignLeft="@+id/soyadiEditText"
+        android:layout_alignStart="@+id/soyadiEditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/EmailEditText"
+        android:hint="E-mailiniz"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/kullaniciAdiEditText"
+        android:layout_alignStart="@+id/kullaniciAdiEditText" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordEditText"
+        android:hint="Şifreniz"
+        android:inputType="numberPassword"
+        android:layout_alignRight="@+id/EmailEditText"
+        android:layout_alignEnd="@+id/EmailEditText"
+        android:layout_below="@+id/EmailEditText"
+        android:layout_alignLeft="@+id/EmailEditText"
+        android:layout_alignStart="@+id/EmailEditText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaydet"
+        android:id="@+id/kaydetButton"
+        android:layout_below="@+id/EmailEditText"
+        android:layout_alignRight="@+id/EmailEditText"
+        android:layout_alignEnd="@+id/EmailEditText"
+        android:layout_marginTop="58dp"
+        android:layout_alignLeft="@+id/EmailEditText"
+        android:layout_alignStart="@+id/EmailEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Üyelik Kayıt Formu"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="#3B6C1B"
+        android:id="@+id/uyelikKayitFormuTextView"
+        android:layout_marginTop="55dp"
+        android:layout_alignRight="@+id/adiEditText"
+        android:layout_alignEnd="@+id/adiEditText"
+        android:layout_alignLeft="@+id/adiEditText"
+        android:layout_alignStart="@+id/adiEditText" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/geriButton"
+        android:background="@drawable/ok1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/uyelikKayitFormuTextView"
+        android:layout_toStartOf="@+id/uyelikKayitFormuTextView" />
+
+
+</RelativeLayout>

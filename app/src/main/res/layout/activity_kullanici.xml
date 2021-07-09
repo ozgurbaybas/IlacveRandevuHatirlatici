@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#E5E0CA"
+    android:id="@+id/linear"
+    tools:context="com.example.zgr.ilachatirlatici.Kullanici">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/HosgeldiniztextView"
+        android:textColor="#3B6C1B"
+        android:textStyle="bold"
+        />
+
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="431dp"
+    android:rowCount="6"
+    android:columnCount="3">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ilaclarımImageView"
+        android:src="@drawable/ilc"
+        android:layout_row="3"
+        android:layout_column="0" />
+
+    <Button
+        android:layout_width="198dp"
+        android:layout_height="75dp"
+        android:text="İLAÇLARIM"
+        android:background="#E5E0CA"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/ilaclarimButton"
+        android:layout_gravity="right"
+        android:layout_row="3"
+        android:layout_column="1" />
+
+    <ImageView
+        android:layout_width="138dp"
+        android:layout_height="133dp"
+        android:id="@+id/randevuImageView"
+        android:src="@drawable/randevu"
+        android:layout_row="4"
+        android:layout_column="0" />
+
+    <Button
+        android:layout_width="197dp"
+        android:layout_height="123dp"
+        android:text="RANDEVULARIM"
+        android:background="#E5E0CA"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/randevuButton"
+        android:layout_gravity="right"
+        android:layout_row="4"
+        android:layout_column="1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ayarlarImageView"
+        android:src="@drawable/ab"
+        android:layout_row="5"
+        android:layout_column="0" />
+
+    <Button
+        android:layout_width="199dp"
+        android:layout_height="118dp"
+        android:text="AYARLARIM"
+        android:id="@+id/ayarButton"
+        android:background="#E5E0CA"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_gravity="right"
+        android:layout_row="5"
+        android:layout_column="1" />
+
+
+</GridLayout>
+
+
+
+</LinearLayout>
